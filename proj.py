@@ -102,8 +102,6 @@ def pca_proj_accuracy(X, y, k):
 files = ['data1.npz','data2.npz','data3.npz']
 n_trials = 10  # to average for accuracies over random projections
 
-######### YOUR CODE GOES HERE ##########
-
 # Using PCA and Random Projection for:
 # Visualizing the datasets
 for i in files:
@@ -127,27 +125,3 @@ for i in files:
     plt.scatter(mrand[:,0], mrand[:,1], c = 'aquamarine', s = 1, alpha=0.5, label = "random")
     legend = plt.legend(loc=1, shadow=True)
     plt.show()
-
-
-
-
-
-# Computing the accuracies over different datasets.
-
-
-
-
-# Don't forget to average the accuracy for multiple
-# random projections to get a smooth curve.
-
-
-
-
-
-# And computing the SVD of the feature matrix
-
-
-
-######## YOU CAN PLOT THE RESULTS HERE ########
-
-# plt.plot, plt.scatter would be useful for plotting
